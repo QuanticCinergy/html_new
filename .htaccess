@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^giftofnani/  -  [L]
+RewriteRule ^partners/  -  [L]
+RewriteRule ^media/  -  [L]
+RewriteRule ^asusrognordic/  -  [L]
+RewriteRule ^maximus/  -  [L]
+RewriteRule ^m/  -  [L]
+RewriteRule ^g/  -  [L]
+RewriteRule ^$ index.php [L]
+RewriteCond $1 !^(index\.php|uploadify-v2.1.4|uploads|wires|themes|themes\/[A-Za-z0-9]+\/assets\/|robots\.txt|sitemap\.xml|favicon\.ico)
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+</IfModule>

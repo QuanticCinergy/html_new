@@ -1,0 +1,657 @@
+	/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;background: url(../img/makeup/noise-bg.jpg) }
+
+body { margin: 0; font-size: 14px; line-height: 1.231; background: url(../img/makeup/main-bg.jpg) top center no-repeat}
+
+body, button, input, select, textarea { font-family: helvetica, arial, sans-serif; font-weight: 300; color: #222; }
+
+/* 
+ * Remove text-shadow in selection highlight
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #bf202f; color: #fff; text-shadow: none; }
+::selection { background: #bf202f; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #c62323; 
+   -webkit-transition:color 0.3s ease-in;  
+   -moz-transition:color 0.3s ease-in;  
+   -o-transition:color 0.3s ease-in; text-decoration: none; }
+a:visited { }
+a:hover { color: #333; cursor: pointer; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers*/
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+p {font-family: helvetica, arial, verdana !important; font-weight: normal !important}
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7
+ * 2. Remove the gap between images and borders on image containers
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9 
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/* 
+ * 1. Correct color not inheriting in IE6/7/8/9 
+ * 2. Correct alignment displayed oddly in IE6/7 
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+
+button, input { line-height: normal; *overflow: visible; }
+
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+ */
+
+table button, table input { *overflow: auto; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/* 
+ * Remove inner padding and border in FF3/4
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/* 
+ * 1. Remove default vertical scrollbar in IE6/7/8/9 
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* ==|== primary styles =====================================================
+   Author: Gavin Weeks gavin@tinyrocketship.com
+   ========================================================================== */
+
+#oops #main {padding-top: 40px; height: 277px; background: url(../img/makeup/oops.png) no-repeat 600px 0;}
+#oops #main #page-title {margin-bottom: 10px; margin-top: 80px; margin-left: 100px;}
+#oops #main p {margin-left: 100px;}
+
+
+.float-left {float: left}
+.float-right {float: right}
+
+.margin-bottom {margin-bottom:20px !important;}
+.margin-top {margin-top:10px !important;}
+
+.errors {padding: 5px 20px 0 20px !important; border-color: #bf202f !Important; margin: 10px 0; overflow: hidden}
+.errors li {list-style-image: url(../img/ico/arrow-red-right.png) !important;}
+
+.button {background: #188B9C; padding: 0 10px; font-size: 13px; border-radius: 3px; line-height: 30px; height: 30px; color: #fff; font-weight: 500; display: block; text-align: center; text-transform: uppercase; text-decoration: none;
+		-webkit-transition:background 0.1s ease-in; -moz-transition:background 0.1s linear; -o-transition:background 0.1s ease-in;
+		text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+		border: 0;
+		}
+.button:hover {background: #bf202f; color: #fff;}
+
+.button.large {height: 50px; line-height: 50px; font-size: 22px; padding: 0 20px;}
+
+p {line-height: 1.5; margin: 0 0 20px 0;}
+
+h2 {margin: 0 0 10px 0;}
+
+#container {background: url(../img/makeup/shadow.png) center 406px no-repeat;}
+
+#fixed-head { width: 1040px; z-index: 2; margin: 0 auto; position: relative}
+	#fixed-head section {margin-bottom: 20px; overflow: hidden;}
+	#fixed-head .inner {width: 1040px; margin: 0 auto; position: relative}
+	#fixed-head #logo {float: left; z-index: 3; margin-top: 20px;}
+	#fixed-head .strapline {position: absolute; left: 0; top: 93px; font-weight: 300; font-size: 15px; margin: 0;}
+		#fixed-head .strapline strong {font-weight: 700; color: #bf202f}
+	#fixed-head .contact-info {position: absolute; right: 0; top: 33px; font-size: 16px; color: #fff;}
+		#fixed-head .contact-info a {font-weight: 300; color: #fff; border-bottom: solid 1px #e94050}
+		#fixed-head .contact-info a:hover {color: #f78b96}
+		#fixed-head .contact-info .phone-number {font-size: 24px; font-weight: 700; color: #FFF; letter-spacing: -1px;}
+
+
+#primary-nav {width: 570px; position: absolute; top: 50px; right: 0; z-index: 2;}
+	#primary-nav nav {padding: 0; float: right;}
+	#primary-nav li { -webkit-transition:background 0.1s ease-in; -moz-transition:background 0.1s ease-in; -o-transition:background 0.1s ease-in; 
+		float: left; text-transform: uppercase; font-size: 12px; font-weight: 700; line-height: 30px; margin: 0 5px; position: relative;}
+			#primary-nav li:last-child {margin-right: 0 !important;}
+		#primary-nav li a {-webkit-transition:color 0.1s ease-in; -moz-transition:color 0.1s ease-in; -o-transition:color 0.1s ease-in; text-shadow: 1px 1px 0 #ddd; display: block; border: solid 1px #ccc; border-radius: 3px;
+			padding: 0 10px; background: url(../img/buttons/nav-bg.png) repeat-x; line-height: 30px; height: 30px; color: #333; text-decoration: none; -webkit-transition: none; -moz-transition: none; -o-transition: none;}
+		
+		#primary-nav li.active {;}
+		#primary-nav li.active a {color: #fff; background: url(../img/buttons/nav-bg-over.png) repeat-x; border: solid 1px #ff1818;text-shadow: 1px 1px 0 #333; }
+/*		#primary-nav li a:hover, #primary-nav li:hover a {color: #fff;} */
+		#primary-nav li a:hover, #primary-nav li:hover a {color: #fff; background: url(../img/buttons/nav-bg-over.png) repeat-x; border: solid 1px #ff1818;text-shadow: 1px 1px 0 #333; }
+		
+		
+	#primary-nav li:hover {background: #222; border-radius: 3px 3px 0 0; box-shadow: 1px -1px 5px rgba(0,0,0,0.3)}
+	#primary-nav li.no-dropdown:hover {border-radius: 3px;}
+	#primary-nav li .dropdown {visibility:hidden; opacity:0; -moz-transition: visibility 0s linear 0.1s, opacity 0.1s linear; -webkit-transition: visibility 0s linear 0.1s, opacity 0.1s linear; -o-transition: visibility 0s linear 0.1s, opacity 0.1s linear;
+		box-shadow: 2px 2px 5px rgba(0,0,0,0.4) ;border-top: solid 1px #333; position: absolute; top: 30px; left: 0; background: #222; width: 200px;border-radius: 0 3px 3px 3px; padding: 0 0 5px 0;}
+	#primary-nav li:hover .dropdown {visibility:visible; opacity:1;}
+	
+	#primary-nav li .dropdown li {border-bottom: solid 1px #444; padding: 0; margin: 0; line-height: 30px; width: 200px; background: url(../img/ico/arrow-blue-right.png) no-repeat 10px 10px;}
+	#primary-nav li .dropdown li a {font-size: 12px; color: #fff; text-transform: none; font-weight: 200; background: none; padding: 0 0 0 21px; display: block}
+	#primary-nav li .dropdown li:hover {box-shadow: 0 0 0 #000;}
+	#primary-nav li .dropdown li a:hover {text-decoration: underline;}
+
+#main {padding: 20px; width: 1000px; margin: 0 auto; background: #fff; border-radius: 5px; box-shadow: 0 0 5px rgba(0,0,0,0.4);}
+	
+#intro {margin-bottom: 20px;margin-top: 50px;  height: 550px; width: 100%; position: relative; background: url(../img/makeup/intro-sky-bg.png) repeat-x top; }
+	#intro .inner {width: 1000px; margin: 0 auto; position: relative;}
+	#intro #logo-large {position: absolute; right: 0; top: 100px; z-index: 1;}
+	#intro .rockets {position: absolute; left: -173px; top: 2px; background: url(../img/makeup/rockets.png) no-repeat top; width: 1017px; height: 398px; display: block;}
+	#intro h1 {position: absolute; top: 420px; left: 0; margin-right: 265px; font-size: 22px; font-weight: 100; text-shadow: 1px 1px 0 #33331b; color: #fff; line-height: 1.4}
+	#intro h1 strong {font-weight: 500; color: #d0b881;}
+
+.intro-button {text-shadow: 0 1px 1px #33331b; text-transform:uppercase; position: absolute; right:0; top: 450px; line-height: 80px; height: 80px; font-size: 30px; font-weight: 500; border-radius: 3px; padding: 0 ; color: #fff; float: right; box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	background: #a99159;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a99159), to(#816f44));
+	background: -moz-linear-gradient(top,  #a99159,  #816f44);}
+
+.intro-button:hover {color: #d0b881}
+
+
+.grad-bg {background: #fff;
+	background: -webkit-gradient(linear, 0 50%, 0 100%, from(#fff), to(#f0f0f0));
+	background: -moz-linear-gradient(top, #fff 50%, #f0f0f0); }
+
+
+#tweet {margin-bottom: 20px; clear: both; margin-top: 10px;}
+#tweet #the-tweet {}
+#tweet #the-tweet .tweet-heading {display: block; line-height: 1.5; margin-bottom: 5px;}
+#tweet #the-tweet p {font-size:12px;margin-bottom: 0; padding: 11px; border: solid 1px #ddd; line-height:18px;border-bottom: solid 1px #a5a5a5; border-radius: 3px; box-shadow: 0 1px 2px #ccc;}
+#tweet #the-tweet a.twitter {background:url('../img/ico/twitter.png') no-repeat;background-position:0 -1px;line-height:18px;padding-left:32px;margin-right:20px;display:block;width:100px;float:left;font-weight:700}
+
+#news-feed {width: 298px; float: left; margin-bottom: 10px; min-height:298px;}
+#related {width: 298px; float: left; margin-bottom: 20px;}
+
+.list-box {border: solid 1px #ddd; border-bottom: solid 1px #a5a5a5; border-radius: 3px; box-shadow: 0 1px 2px #ccc; position: relative; padding-bottom: 10px;}
+.list-box h2 {background: #eee; height: 40px; line-height: 40px; text-indent: 10px; color: #333; font-size: 14px; margin-bottom: 0;}
+.list-box .all-link {position: absolute; right: 10px; top: 10px;}
+.list-box article {padding: 10px 10px; border-bottom: solid 1px #ddd; overflow: hidden;}
+.list-box article h3 {margin: 0; font-size: 13px; font-family: helvetica, arial, verdana !important; }
+.list-box article .thumb {float: left; margin: 0 10px 0 0; width: 80px;}
+.list-box article .meta {color: #999; font-size: 12px; margin: 0 0 0 90px;}
+.list-box article .meta.name {color: #666}
+
+#carousel_surround {float: right; width: 678px; overflow: hidden; position: relative; border: solid 1px #ddd; border-bottom: solid 1px #a5a5a5; border-radius: 4px; -moz-border-radius:4px; -webkit-border-radius:4px; box-shadow: 0 1px 2px #ccc; margin-bottom: 10px;}
+#carousel_surround ul {list-style: none; margin: 0; padding: 0;}
+#carousel_surround ul.slideshow {width: 2000em;}
+#carousel_surround ul.slideshow li {float: left; width: 678px; position: relative}
+#carousel_surround ul.slideshow li img {width: 678px;}
+#carousel_surround ul.slideshow li .carousel-copy {position: absolute; bottom: 50px; background: rgba(0,0,0,0.8); padding: 10px; color: #fff;width:658px;}
+#carousel_surround ul.slideshow li .carousel-copy h2 {font-family: museo-sans-rounded, helvetica, arial, sans-serif; font-size: 22px; font-weight: 100; text-shadow: 1px 1px 0 #000; margin-bottom: 5px;}
+#carousel_surround ul.slideshow li .carousel-copy p {margin-bottom: 0; font-size: 13px;}
+
+#carousel_surround .carousel-nav {position: absolute; bottom: 0; left: 0; width: 100%; background: #999; height: 50px; z-index: 999; border-bottom: solid 1px #555;
+	background: #ccc;
+	background: -webkit-gradient(linear, 0 0%, 0 100%, from(#ccc), to(#777));
+	background: -moz-linear-gradient(top, #ccc, #777); 
+	}  	
+#carousel_surround .carousel-nav li {float: right; margin: 10px 10px 0 0;}  	
+#carousel_surround .carousel-nav li img {box-shadow: 1px 1px 0 #fff; opacity: 0.3}
+#carousel_surround .carousel-nav li.activeSlide img {opacity: 1;}
+
+#sponsors {padding: 10px; height: 100px; clear: both; overflow:hidden; border: solid 1px #ddd; border-bottom: solid 1px #a5a5a5; border-radius: 3px; box-shadow: 0 1px 2px #ccc; margin-bottom: 10px;}
+#sponsors ul {list-style: none; margin: 0; padding: 0; width: 2000em}
+#sponsors ul li {float: left; width: 200px; margin: 10px 22px 0 22px;}
+
+#lead-block {margin-bottom: 10px; clear:both;overflow:hidden;}
+#lead-block ul {list-style: none; margin: 0; padding: 0;}
+#lead-block ul li {float: left; margin-right: 9px;}
+#lead-block ul li:last-child {margin: 0;}
+
+
+/* GENERAL CONTENT STYLES */
+
+#userbox {
+	position: absolute; top: 20px; right: 0;
+	}
+	
+#userbox ul {list-style:none;margin:0;padding:0;line-height:16px;float:right;}
+#userbox ul li {float:left;padding:0; margin-left: 20px;
+}
+#userbox ul li a {display:block;font-size:11px;text-transform:uppercase;color:#FFF;font-weight:normal;}
+#userbox ul li a:hover {color:#C62323}
+
+#userbox div.welcome {color:#FFF;margin-left:20px;}
+
+#content {overflow: hidden; width: 1000px;}
+#content.has-side {width:680px;float:left;}
+
+#page-title {font-size: 38px; font-weight: 300; letter-spacing: -1px; margin:0 0 20px 0; line-height: 1; font-family: museo-sans-rounded, helvetica, arial, sans-serif;}
+	h2#page-title {font-size: 25px; margin-bottom: 10px; font-family: museo-sans-rounded, helvetica, arial, sans-serif;}
+#the-title {font-size: 36px; font-weight: 300; letter-spacing: -1px; margin:0; line-height: 1; font-family: museo-sans-rounded, helvetica, arial, sans-serif;}
+
+#page-intro strong, #page-content strong  {color: #bf202f}
+
+#page-intro {margin-bottom: 20px; padding-bottom: 0px;}
+#page-intro p {font-size: 14px; line-height: 1.8;}
+#page-intro p img {margin: 20px 0;}
+
+#page-content, 
+#article {float: left; width: 680px;}
+
+#page-content h2 {font-weight: 500; margin-bottom:10px; font-size: 22px; font-family: museo-sans-rounded, helvetica, arial, sans-serif; }
+#article h2 {font-weight: 500; margin-bottom: 0; font-family: museo-sans-rounded, helvetica, arial, sans-serif; }
+
+#page-content p, 
+#article p {line-height: 1.8}
+
+#article p.meta {color: #999; margin-bottom: 5px; float: left;}
+
+#article p.comments {color: #bf202f; font-size: 20px; font-weight: 500; margin-bottom: 10px;}
+
+#page-content form .form-row {margin-bottom: 10px;}
+#page-content form .form-row label {width: 250px; float: left; height: 33px; line-height: 33px; font-weight: 500; color: #333}
+	#page-content form .form-row label span {color: #bf202f; font-weight: 700}
+#page-content form .form-row input[type="text"] {width: 398px; padding: 7px 5px 7px 5px; border: solid 1px #ddd;  box-shadow: 0 0 5px #ddd;-webkit-transition:box-shadow 0.1s ease-in; -moz-transition:box-shadow 0.1s ease-in; -o-transition: 0.1s ease-in;}
+	#page-content form .form-row input[type="text"]:focus {box-shadow: 0 0 5px #bf202f; border-color: #bf202f}
+#page-content form .form-row textarea {width: 398px; padding: 7px 5px 7px 5px; border: solid 1px #ddd; box-shadow: 0 0 5px #ddd; height: 100px;-webkit-transition:box-shadow 0.1s ease-in; -moz-transition:box-shadow 0.1s ease-in; -o-transition: 0.1s ease-in;}
+#page-content form .form-row textarea:focus {box-shadow: 0 0 5px #bf202f; border-color: #bf202f}
+
+.rf-article-img {margin-bottom: 20px; max-width: 680px;}
+
+#team {overflow: hidden;list-style:none;padding:0;border-top:2px solid #E8E8E8}
+#team li {display:block;padding:15px 0;overflow:hidden;border-bottom:1px solid #E8E8E8}
+#team li p {margin-bottom:0;}
+#team ul {padding: 0; list-style: none;margin-top:0;}
+#team ul li {float: left; margin-right: 20px; margin-top: 20px;padding:0;border-bottom:0;overflow:visible;}
+#team ul li:nth-child(4n) {margin-right: 0;}
+#team ul li img {background:#FFF;margin-bottom:10px;float: left;box-shadow: 0 1px 2px #CCC;-webkit-box-shadow: 0 1px 2px #CCC; -moz-box-shadow: 0 1px 2px #CCC; padding:1px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;}
+#team ul li h2 {text-align: center; font-size: 18px; margin-bottom: 0; font-weight: 300; line-height: 1; color: #bf202f;}
+#team ul li p {text-align: center; margin: 0; text-transform: uppercase; font-size: 12px; color: #999}
+#team ul li p a {font-weight: 700; margin-top: 5px; display: block}
+
+#vacancies-box {float: left; width: 660px;}
+
+#the-articles {list-style:none;padding:0;border-top:2px solid #E8E8E8}
+#the-articles li  {width:100%;display:block;padding:15px 0;clear:both;overflow:hidden;border-bottom:1px solid #E8E8E8}
+#the-articles li h2 {margin-bottom:5px; font-family: museo-sans-rounded, helvetica, arial, sans-serif; }
+#the-articles li img {float:left;margin-right:15px;}
+#the-articles span.meta {font-size:11px;color:#999;}
+#the-articles p {margin-top:10px;margin-bottom:0;}
+
+#article ul.categories {font-family: helvetica, arial, verdana !important; list-style:none;padding:0;font-size:14px;margin-bottom:20px;clear:both;overflow:hidden; margin-top: -5px;}
+#article ul.categories li.first {font-weight:bold;color:#C62323}
+#article ul.categories li {float:left;margin-right:10px;color:#999;}
+
+.tooltip {
+	display:none;
+	background: url(../img/makeup/tooltip.png) no-repeat -235px bottom ;
+	font-size:16px;
+	font-weight: 500;
+	text-align: left;
+	padding:5px 10px 15px 10px;
+	color:#fff;	
+	z-index: 999;
+	/*border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;*/
+}
+
+/* -------------------------------- */
+/* COMMENTS */
+/* -------------------------------- */
+
+#comment-form {background: #333;border:1px solid rgba(0,0,0,0.2); padding: 18px; margin-bottom: 0px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	overflow: hidden;
+	box-shadow:0 1px 2px #CCC;
+	}
+#comment-form h3 {font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2", Helvetica, Arial; font-size: 16px; color: #fff; text-transform: uppercase; margin-bottom: 10px; font-weight: 500}
+#comment-form h4 {text-shadow: 0 1px 1px rgba(0,0,0,0.5);text-align: center;font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2", Helvetica, Arial; font-size: 20px; color: #FFF; text-transform: none; margin-bottom: 0px; font-weight: 500;margin-top:0;}
+#comment-form textarea {width: 98.5%; border: solid 1px #000; margin-bottom: 10px; font-family: Helvetica, arial, verdana; font-size: 12px; line-height: 20px; padding: 3px; height: 100px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	}
+	
+	#comment-form #user-info {float: left; width: 25%;}
+	#comment-form #user-info h3 {font-family: helvetica, arial; font-size: 13px; text-transform: none; font-weight: bold;margin-bottom:0 !important;}
+	#comment-form #user-info img {float: left; width: 50px; height: 50px; margin-right: 10px;border: 1px solid #000; border-radius: 3px 3px 3px 3px; box-shadow: 0 0 5px #000}
+	#comment-form #write-comment {float: left; width: 75%}
+
+#the-comments {padding:0;border-top: solid 2px #E8E8E8; padding-top: 5px;overflow:visible}
+#the-comments li {min-height: 72px; border-bottom: solid 1px #eee; padding-bottom: 0px; margin-bottom: 20px;}
+	#the-comments .comment-author {float: left;margin-bottom: 10px;margin-left:2px;}
+		#the-comments .comment-author a img {background:#EEEEEE;width: 60px; height: 60px; float: left; margin-right: 10px; box-shadow: 0 1px 2px #CCC;-webkit-box-shadow: 0 1px 2px #CCC; -moz-box-shadow: 0 1px 2px #CCC; padding:1px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;}
+		#the-comments .comment-author h3 {margin-bottom: 5px;}
+			#the-comments .comment-author h3 a {font-family: Helvetica, Arial; font-size: 14px; color: #F9C800; }
+		#the-comments .comment-author .name {display: block; font-weight: normal; color: #999; font-size: 12px; margin-bottom: 3px;}
+		#the-comments .comment-author .team {display: block; font-size: 12px;}
+		#the-comments .user-info h3 {margin-bottom:5px;}
+		#the-comments .user-info span.meta {font-size:11px;color:#999;}
+.comment-date {color: #999; margin-bottom: 10px; font-size: 12px; border-bottom: solid 1px #eee; padding-bottom: 5px; position: relative}
+.comment-number {position: absolute; right: 0px; top: 0;}
+
+#the-comments .the-comment {margin-left: 82px;}
+#the-comments .the-comment img {max-width: 450px;}
+#the-comments .the-comment .meta { display: block; border-bottom: solid 1px #eee; padding-bottom: 5px; margin-bottom: 10px}
+	
+ .edit-options li {float: right; border: 0 !Important; min-height: 20px !important; margin-right:10px !important;line-height: 24px; font-size: 12px; display: none}
+	#the-comments .the-comment:hover .edit-options li {display: block}
+
+
+/* SIDEBAR STYLES */
+
+#sidebar {float: right; width: 300px;}
+
+#get-in-contact {margin-bottom: 20px; overflow: hidden}
+#get-in-contact p {margin-bottom: 0; line-height: 1; margin-bottom: 15px;}
+#get-in-contact .callus {font-size: 25px; font-weight: 500; margin-bottom: 5px;}
+#get-in-contact .the-number {font-size: 38px; font-weight: 700; color: #bf202f; line-height: 1; margin-bottom: 10px;}
+
+#our-clients {padding: 0 0 40px 0; margin: 40px 0 20px 0 !Important;}
+	#our-clients { list-style-position: inside; margin:0;padding:0; overflow: hidden; padding: 0; border-width: 0}
+	#our-clients li {width: 250px; text-align: center; list-style: none !Important; float: left; margin-bottom: 50px; opacity:0.5; -moz-transition: opacity 0.1s linear;-webkit-transition: opacity 0.1s linear;-o-transition: opacity 0.1s linear;}
+	#our-clients li:hover {opacity: 1;}
+	#our-clients li a {display: block}
+
+/* --------------------------------- */
+/* FORUMS */
+/* --------------------------------- */
+
+.forums h2.topic {font-size: 35px; font-weight: 500; border-bottom: solid 1px #eee; line-height: 40px;}
+.forums h2.topic span {font-size: 15px; color: #666; font-weight: 500; margin-right: 20px; text-transform: uppercase}
+
+#forum-list {width: 640px; float: left}	
+#forum-list h2 { font-size: 35px; font-weight: 500; line-height: 40px;margin-bottom: 0px; padding-bottom: 10px;position: relative; border-bottom: solid 1px #eee;}
+#forum-list h2 span {font-size: 18px; color: #666; position: absolute; right: 0px; bottom: 10px; font-weight: 500;}
+
+.the-forums {margin-bottom: 20px;}
+.the-forums li {border-bottom: solid 1px #eee; overflow: hidden; padding: 10px 0; position: relative}	
+.the-forums li h3 {font-size: 22px; margin-top: 5px;}
+.the-forums li .thumb-left {float: left; margin-right: 20px;}	
+.the-forums li p {margin: 0}
+.the-forums li .forum-threads {position: absolute; right: 0px; top: 30px; font-size: 20px; color: #666; font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2", Helvetica, Arial;}
+
+.back {text-indent: -9999px;}	
+.back span {width: 20px; background: url(../images/ico/arrowL-white.png) no-repeat; display: block; margin-top: 10px;}	
+	
+.forum-table {text-align: left; clear: both; margin-top: 20px; width: 1000px; margin-left: -20px;}
+.forum-table th {font-weight: 500; font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2", Helvetica, Arial; font-size: 18px; padding: 0 0 10px 0}
+.forum-table td,.forum-table th {border-bottom: solid 1px #eee;}
+.forum-table .replies {text-align: center}
+.forum-table tr:hover {background: #f5f5f5; cursor: pointer}
+.forum-table tr:hover a {color: #444 !Important}
+.forum-table .ico {text-align: center}
+.forum-table .ico img {margin: 0 auto;}
+.forum-table a {padding: 11px 0; display: block; font-weight: bold;}	
+	
+	
+#the-posts { border-top: solid 1px #eee; padding-top: 10px;}
+#the-posts li {min-height: 120px; border-bottom: solid 1px #eee; padding-bottom: 0px; margin-bottom: 20px;}
+	#the-posts .post-author {float: left; width: 280px; margin-bottom: 20px}
+		#the-posts .post-author a img {width: 98px; height: 98px; float: left; margin-right: 10px; border: solid 1px #ddd; }
+		#the-posts .post-author h3 {margin-bottom: 5px;}
+			#the-posts .post-author h3 a {font-family: Helvetica, Arial; font-size: 14px; color: #F9C800; }
+		#the-posts .post-author .name {display: block; font-weight: normal; color: #999; font-size: 11px; margin-bottom: 3px;}
+		#the-posts .post-author .team {display: block; font-size: 11px;}
+.post-date {color: #999; margin-bottom: 10px; font-size: 11px; border-bottom: solid 1px #eee; padding-bottom: 5px; position: relative}
+.post-number {position: absolute; right: 0px; top: 0;}
+
+#the-posts .the-post {margin-left: 300px; min-height: 100px; padding-bottom: 30px; position: relative}
+#the-posts .the-post .edit-options {position: absolute; bottom: 0; border: 0; }
+#the-posts .the-post .edit-options li.adminedit a {display: none;}
+#the-posts .the-post:hover .edit-options li a {color: #ffcc00 !important; display: block !Important}
+#the-posts .the-post .meta {display: block; text-align: right; margin-bottom: 10px;}
+#the-posts .the-post p {margin-right: 150px;}
+#the-posts .the-post img {max-width: 600px;}
+
+#new-post {background: #111; padding: 20px; margin-bottom: 0px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	overflow: hidden}
+
+#new-post h2 {color: #fff; margin-bottom: 10px; font-weight: 500; font-size: 20px; text-transform: uppercase; display: none;}
+#new-post h4 {text-align: center;font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2", Helvetica, Arial; font-size: 20px; color: #999; text-transform: none; margin-bottom: 0px; font-weight: 500}	
+
+#new-post #write-post {margin-left: 250px; }
+#new-post #write-post textarea {width: 670px;}
+#new-post #user-info {float: left; width: 230px;}
+#new-post #user-info img {width: 70px; height: 70px; float: left; margin-right: 10px;border: 1px solid #666; }
+#new-post #user-info h3 {margin-bottom: 2px; font-size: 13px; font-family: helvetica, arial;}
+#new-post #user-info .name {font-size: 11px; color: #999}
+
+
+
+/* FOOTER STYLES */
+
+footer {font-family: helvetica, arial, verdana !important; font-weight: normal !important; font-size: 12px; padding:10px; clear: both; margin: 0 auto; width: 980px; border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; box-shadow: 0 1px 2px #CCCCCC; border: solid 1px #ddd; border-color: #DDDDDD #DDDDDD #A5A5A5}
+footer p {margin-bottom: 0px;}
+footer ul {padding: 0; list-style: none;}
+footer nav {float: right;}
+footer #footer-nav {overflow: hidden; display: block;}
+footer #footer-nav li {float: left; margin-right: 10px; line-height: 1.5}
+
+footer #social {overflow: hidden; margin-top: 0; padding-bottom: 10px; border-bottom:2px solid #CCC}
+footer #social li {float: left; margin-right: 20px; position: relative; padding: 1px 0 0 20px; font-weight: 700;}
+footer #social li a {color: #333}
+footer #social li a:hover {color: #000}
+footer #social li img {position: absolute; left: 0; top: 0;}
+
+#credit {color: #333;}
+#credit p {margin: 0 auto; width: 1030px; padding: 17px 0 15px 0}
+#credit a {color: #999; font-weight: 500; border-bottom: solid 1px #e94050}
+#credit a:hover {color: #f78b96}
+
+/* ADDED STYLES */
+
+.playerbox {z-index: 50000; position: relative; width: 670px; height: 200px; background-image: url(http://www.quanticgaming.com/uploads/misc/playerbox.png); margin-bottom: 20px; position: relative;}
+.pb_text {width: 500px; margin-left: 155px; color: #FFF; font-family: helvetica, Arial; font-size: 13px; line-height: 1.3;}
+.pb_text h3 {position: relative; top: 16px; font-family: museo-sans-rounded, helvetica, arial, sans-serif; font-weight: 100; font-size: 26px; color: #c90000; text-shadow: 1px 1px 0px #000; margin-bottom: 0px;}
+.pb_text h3 em {font-style: normal; font-size: 20px;}
+.pb_text h4 {margin-top: 12px; position: relative; top: 0px; font-family: museo-sans-rounded, helvetica, arial, sans-serif; font-size: 16px; font-weight: 300; text-shadow: 1px 1px 0px #000; margin-bottom: 5px;}
+.pb_text h3 strong {font-weight: 700; color: #c90000 !important;}
+.pb_text p {line-height: 1.3 !important;}
+.pb_text table th {text-align: right; width: 80px;}
+.pb_text table td {width: 150px;}
+.pb_media {position: absolute; width: 150px; text-align: right; top: 140px; left: 500px;}
+.pb_photo {width: 130px; height: 165px; position: absolute; top: 15px; left: 15px;}
+.fb-like-box {margin-bottom: 40px; margin-top: 3px;}
+#article-tweet {float: left; margin-top: 4px; margin-bottom: 15px;}
+#article-fb {float: left; margin-top: 4px; margin-bottom: 15px;}
+.fb_contain {width: 300px; height: 350px; position: relative; display: inline-block;}
+.pb_frame {top: 5px; left: 5px; width: 146px; height: 200px; z-index: 999; position: absolute; background-image: url(http://www.quanticgaming.com/uploads/misc/frame.png}
+		
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders  */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+
+}
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection
+   ========================================================================== */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}

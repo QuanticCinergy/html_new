@@ -1,0 +1,5 @@
+[06-Jan-2012 13:13:29] PHP Fatal error:  Using $this when not in object context in /home/dignitas/public_html/themes/admin/views/forum_sections/index.php on line 99
+[09-Apr-2012 13:40:19] PHP Fatal error:  Using $this when not in object context in /home/dignitas/public_html/themes/admin/views/forum_sections/index.php on line 99
+[23-Apr-2012 22:55:05] PHP Fatal error:  Using $this when not in object context in /home/dignitas/public_html/themes/admin/views/forum_sections/index.php on line 99
+[13-May-2012 17:31:14] PHP Fatal error:  Using $this when not in object context in /home/dignitas/public_html/themes/admin/views/forum_sections/index.php on line 99
+[10-Jun-2012 13:24:35] PHP Fatal error:  Using $this when not in object context in /home/dignitas/public_html/themes/admin/views/forum_sections/index.php on line 99

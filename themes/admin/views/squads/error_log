@@ -1,0 +1,6 @@
+[06-Jan-2012 13:13:30] PHP Fatal error:  Using $this when not in object context in /home/dignitas/public_html/themes/admin/views/squads/index.php on line 91
+[06-Feb-2012 09:21:04] PHP Fatal error:  Using $this when not in object context in /home/dignitas/public_html/themes/admin/views/squads/index.php on line 91
+[09-Apr-2012 13:40:20] PHP Fatal error:  Using $this when not in object context in /home/dignitas/public_html/themes/admin/views/squads/index.php on line 91
+[23-Apr-2012 22:55:04] PHP Fatal error:  Using $this when not in object context in /home/dignitas/public_html/themes/admin/views/squads/index.php on line 91
+[13-May-2012 17:31:14] PHP Fatal error:  Using $this when not in object context in /home/dignitas/public_html/themes/admin/views/squads/index.php on line 91
+[10-Jun-2012 13:24:35] PHP Fatal error:  Using $this when not in object context in /home/dignitas/public_html/themes/admin/views/squads/index.php on line 91

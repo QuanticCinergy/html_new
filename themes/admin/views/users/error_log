@@ -1,0 +1,6 @@
+[06-Jan-2012 13:13:30] PHP Fatal error:  Call to undefined function site_url() in /home/dignitas/public_html/themes/admin/views/users/index.php on line 42
+[17-Mar-2012 20:55:03] PHP Fatal error:  Call to undefined function site_url() in /home/dignitas/public_html/themes/admin/views/users/index.php on line 42
+[09-Apr-2012 13:40:20] PHP Fatal error:  Call to undefined function site_url() in /home/dignitas/public_html/themes/admin/views/users/index.php on line 42
+[23-Apr-2012 22:55:03] PHP Fatal error:  Call to undefined function site_url() in /home/dignitas/public_html/themes/admin/views/users/index.php on line 42
+[13-May-2012 17:31:14] PHP Fatal error:  Call to undefined function site_url() in /home/dignitas/public_html/themes/admin/views/users/index.php on line 42
+[10-Jun-2012 13:24:35] PHP Fatal error:  Call to undefined function site_url() in /home/dignitas/public_html/themes/admin/views/users/index.php on line 42
